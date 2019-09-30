@@ -22,7 +22,7 @@
 			.dot-frame { display: table; height: 33.33%; width: 50%; background-color: none; float: left; }
 			.dot-cell { display: table-cell; vertical-align: middle; width: 100%; }
 			.dot { height: 1.6em; width: 1.6em; margin: auto; background-color: beige; border-radius: 0.8em; }
-			.teaser { margin: 2em auto 0px; }
+			.teaser { margin: 1em auto 0px; }
 		</style>
 	</head>
 	
@@ -36,7 +36,7 @@
 					<!-- Player 1 --> 
 					<div class="col-sm text-center"> 
 						<p class="handwriting">Player 1</p> 
-						<div class="dice-table" onClick="generateScore(1)"> 
+						<div class="dice-table" id="die1" onClick="generateScore(1)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
 									<div class="dot-cell"> 
@@ -75,7 +75,7 @@
 					<!-- Player 2 --> 
 					<div class="col-sm text-center">
 						<p class="handwriting">Player 2</p>
-						<div class="dice-table" onClick="generateScore(2)"> 
+						<div class="dice-table" id="die2" onClick="generateScore(2)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
 									<div class="dot-cell"> 
