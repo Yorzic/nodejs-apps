@@ -17,10 +17,9 @@
 			@import url('https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap');
 			.handwriting { font-family: 'Mansalva', cursive; }
 			.gaming { font-family: 'Chakra Petch', sans-serif; }
-			
 			.dice-table { height: 10em; width: 10em; margin: 0px auto 3em; display: table; background-color: crimson; border-radius: 1.5em; }
 			.dice-cell { display: table-cell; vertical-align: middle; }
-			.dot-frame { display: table; height: 33.33%; width: 33.33%; background-color: none; float: left; }
+			.dot-frame { display: table; height: 33.33%; width: 50%; background-color: none; float: left; }
 			.dot-cell { display: table-cell; vertical-align: middle; width: 100%; }
 			.dot { height: 1.6em; width: 1.6em; margin: auto; background-color: beige; border-radius: 0.8em; }
 			.teaser { margin: 2em auto 0px; }
@@ -37,7 +36,7 @@
 					<!-- Player 1 --> 
 					<div class="col-sm text-center"> 
 						<p class="handwriting">Player 1</p> 
-						<div class="dice-table"> 
+						<div class="dice-table" onClick="generateScore(1)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
 									<div class="dot-cell"> 
@@ -68,22 +67,7 @@
 									<div class="dot-cell"> 
 										<div class="dot"></div> 
 									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
+								</div>
 							</div> 
 						</div> 
 					</div>
@@ -91,7 +75,7 @@
 					<!-- Player 2 --> 
 					<div class="col-sm text-center">
 						<p class="handwriting">Player 2</p>
-						<div class="dice-table"> 
+						<div class="dice-table" onClick="generateScore(2)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
 									<div class="dot-cell"> 
@@ -122,22 +106,7 @@
 									<div class="dot-cell"> 
 										<div class="dot"></div> 
 									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
-								<div class="dot-frame"> 
-									<div class="dot-cell"> 
-										<div class="dot"></div> 
-									</div> 
-								</div> 
+								</div>
 							</div> 
 						</div>
 					</div>
@@ -151,5 +120,9 @@
 				<p class="text-center handwriting">www.apy.app</p>
 			</div>
 		</section>
+		
+		<!-- Scripts Section -->
+		<script src="js/script.js" type="text/javascript"></script>
+		
 	</body>
 </html>
