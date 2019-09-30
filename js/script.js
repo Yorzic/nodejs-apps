@@ -1,12 +1,29 @@
 // JavaScript Document
+function play() {
+	let playerOneNumber = generateRandomNumber(6) + 1;
+	let playerTwoNumber = generateRandomNumber(6) + 1;
+	
+	generateScore(1, playerOneNumber);
+	generateScore(2, playerTwoNumber);
+	
+	if (playerOneNumber > playerTwoNumber) {
+		document.getElementById("player1").innerHTML = "Player 1 wins! 🥳"
+		document.getElementById("player2").innerHTML = "Player 1 loses! 😭"
+	} else if (playerOneNumber < playerTwoNumber) {
+		document.getElementById("player1").innerHTML = "Player 1 loses! 😭"
+		document.getElementById("player2").innerHTML = "Player 1 wins! 🥳"
+	} else {
+		document.getElementById("player1").innerHTML = "It's a tie! 😱"
+		document.getElementById("player2").innerHTML = "It's a tie! 😱"
+	}
+}
+
 function generateRandomNumber(max) {
 	return Math.floor(Math.random() * Math.floor(max));
 }
 
-function generateScore(player) {
-	let randomNumber = generateRandomNumber(6) + 1;
-//	alert("Player " + player + " number is " + randomNumber);
-	updateDie(player, randomNumber);
+function generateScore(player, number) {
+	updateDie(player, number);
 }
 
 function updateDie(player, number) {

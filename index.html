@@ -31,11 +31,11 @@
 		<section id="dice"> 
 			<div class="container"> 
 				<h1 class="text-center teaser gaming">Dice</h1> 
-				<p class="text-center handwriting">Let's play.</p> 
+				<p class="text-center handwriting action-button" onClick="play()"><button>Let's play!</button></p> 
 				<div class="row"> 
 					<!-- Player 1 --> 
 					<div class="col-sm text-center"> 
-						<p class="handwriting">Player 1</p> 
+						<p class="handwriting" id="player1">Player 1</p> 
 						<div class="dice-table" id="die1" onClick="generateScore(1)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
@@ -74,7 +74,7 @@
 					
 					<!-- Player 2 --> 
 					<div class="col-sm text-center">
-						<p class="handwriting">Player 2</p>
+						<p class="handwriting" id="player2">Player 2</p>
 						<div class="dice-table" id="die2" onClick="generateScore(2)"> 
 							<div class="dice-cell"> 
 								<div class="dot-frame"> 
@@ -117,6 +117,7 @@
 		<!-- Hero Section -->
 		<section id="footer">
 			<div class="container">
+				<p class="text-center handwriting">Developed by Artur Daylidonis</p>
 				<p class="text-center handwriting">www.apy.app</p>
 			</div>
 		</section>
