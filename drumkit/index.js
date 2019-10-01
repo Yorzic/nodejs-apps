@@ -15,31 +15,31 @@ buttons.forEach(function(element) {
 	
 	if (elementClass == "w") {
 		soundCode = 87;
-		element.innerHTML = "<img src='images/crash.png' alt='Crash' height='100%' width='100%'>"
+		element.style = "background-image: url('images/crash.png');"
 	} 
 	else if (elementClass == "a") {
 		soundCode = 65;
-		element.innerHTML = "<img src='images/kick.png' alt='Kick bass' height='100%' width='100%'>"
+		element.style = "background-image: url('images/kick.png');"
 	} 
 	else if (elementClass == "s") {
 		soundCode = 83;
-		element.innerHTML = "<img src='images/snare.png' alt='Snare' height='100%' width='100%'>"
+		element.style = "background-image: url('images/snare.png');"
 	} 
 	else if (elementClass == "d") {
 		soundCode = 68;
-		element.innerHTML = "<img src='images/tom1.png' alt='Tom 1' height='100%' width='100%'>"
+		element.style = "background-image: url('images/tom1.png');"
 	} 
 	else if (elementClass == "j") {
 		soundCode = 74;
-		element.innerHTML = "<img src='images/tom2.png' alt='Tom 2' height='100%' width='100%'>"
+		element.style = "background-image: url('images/tom2.png');"
 	} 
 	else if (elementClass == "k") {
 		soundCode = 75;
-		element.innerHTML = "<img src='images/tom3.png' alt='Tom 3' height='100%' width='100%'>"
+		element.style = "background-image: url('images/tom3.png');"
 	} 
 	else if (elementClass == "l") {
 		soundCode = 76;
-		element.innerHTML = "<img src='images/tom4.png' alt='Tom 4' height='100%' width='100%'>"
+		element.style = "background-image: url('images/tom4.png');"
 	} 
 	
 	// This is how you assign a function with an input as an event listener in JS :(
