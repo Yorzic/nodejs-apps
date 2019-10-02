@@ -12,6 +12,11 @@ h1 {
   text-shadow: 3px 0 #DA0463;
 }
 
+#console,
+#result {
+	color: #283149 !important;
+}
+
 .set {
   margin: 10% auto;
 }
