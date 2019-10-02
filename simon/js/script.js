@@ -1,5 +1,5 @@
 // JavaScript Document
-let awesomeness = ["Wunderbar", "Splendid", "Marvellous", "Epic stuff", "Cool beans", "Unbelievable", "You rock"];
+let awesomeness = ["Wunderbar", "Splendid", "Marvellous", "Epic stuff", "Cool beans", "Jolly good", "You rock"];
 let buttonColours = ["red", "blue", "yellow", "green"];
 var gamePattern = [];
 var userClickedPattern = [];
@@ -22,7 +22,8 @@ $(document).ready( function() {
 		timesClicked++
 		
 		if (timesClicked == level) {
-			$(".teaser").text("Wundebar!");
+			let epicText = randomAwesomeness();
+			$(".teaser").text(epicText);
 			setTimeout(function() {
 				nextSequence();
 			}, 1000);
@@ -31,9 +32,7 @@ $(document).ready( function() {
 		}
 		
 		$("#console").text(gamePattern + " | " + userClickedPattern);
-		
 	});
-	
 });
 
 function nextSequence() {
@@ -89,4 +88,9 @@ function resetGame() {
 	$(".teaser").text("Press Any Key to Start");
 	$("#console").text("Game restarted.");
 	$("#result").text("");
+}
+
+function randomAwesomeness() {
+	let randomNumber = generateRandomNumber(awesomeness.length);
+	return awesomeness[randomNumber];
 }
