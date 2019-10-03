@@ -11,4 +11,11 @@ The game is not optimised for use on mobile devices.
 
 ## Simon
 A basic implementation of the classic toy, Simon trains your attention and memory by encouraging you to memorise randomly generated colourful buttons.
-This is a work in progress.
+The game is somewhat optimised for use on mobile devices.
+
+## Superheroes
+This is a command line only tool that displays randomly generated supervillain and superhero names. It shows how to implement Node Package Manager along with the nodes into your project.
+Not applicable to mobile devices.
+
+## Server
+A simple Express server displaying html pages.
