@@ -34,6 +34,11 @@ app.get("/about", function(request, response){
   response.sendFile(path.join(__dirname+'/about.html'));
 });
 
+app.get("/404", function(request, response){
+  // response.send("<!doctype html><html lang='en-US'><head><link href='/styles.css' rel='stylesheet' type='text/css'></head><body><div class='teaser' id='title'><h1>Contact me</h1><p><a href='mailto:a@apy.app?subject=Email%20from%20a%20custom%20server'>a@apy.app</a></p></div></body></html>");
+  response.send("Oops! This page wasn't found on our website.");
+});
+
 app.use('/', router);
 app.listen(process.env.port || 3000, function() {
   console.log("Server started on port 3000");
