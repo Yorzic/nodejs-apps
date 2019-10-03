@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Calculator</title>
+		<style media="screen">
+			body {
+				text-align: center;
+				background-color: #283149;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			h1 {
+				font-size: 3rem;
+				color: #DBEDF3;
+				text-shadow: 3px 0 #DA0463;
+			}
+
+			p, li, a {
+				font-size: 1rem;
+				color: #DBEDF3;
+			}
+
+			li, a {
+				text-decoration: none;
+			}
+
+			li:hover, a:hover, button:hover {
+				color: rgb(102, 187, 255);
+			}
+
+			ul {
+				list-style: none;
+				padding-inline-start: 0px;
+			}
+
+			ul li {
+				display: inline-block;
+			}
+
+			.container form {
+				margin-bottom: 50px;
+			}
+
+			form input {
+				width: 5rem;
+				height: 5rem;
+				margin: 0px 1em;
+				font-size: 1.5rem;
+				text-align: center;
+			}
+
+			form p {
+				display: inline-block;
+				font-size: 1.5rem;
+			}
+
+			.button, button {
+				margin: 0.5em;
+				padding: 1rem;
+				height: 4rem;
+				width: 4rem;
+				border-radius: 0.5em;
+				background-color: green;
+				font-size: 1.5rem;
+				color: white;
+			}
+
+			.button:hover {
+				background-color: rgba(0,128,0,0.5);
+			}
+
+			.blue {
+				background-color: orange;
+				color: black;
+				width: 10rem;
+			}
+
+			.blue:hover {
+				background-color: rgba(255,165,0,0.5);
+				color: grey;
+			}
+
+			.calculate {
+				display: block;
+				margin: 2rem auto;
+			}
+
+			.article-separator {
+				border: none;
+				border-top: dotted 10px;
+				border-color: #DBEDF3;
+				width: 20%;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Calculator Section -->
+		<section id="calculator">
+			<div class="container">
+				<h1>Calculator</h1>
+				<form action="/" method="post">
+					<input type="text" name="num1" placeholder="4"></input>
+					<input type="text" name="num2" placeholder="2"></input>
+					<ul>
+						<li><button type="submit" name="submit" value="add" class="button">+</button></li>
+						<li><button type="submit" name="submit" value="subtract" class="button">-</button></li>
+						<li><button type="submit" name="submit" value="multiply" class="button">*</button></li>
+						<li><button type="submit" name="submit" value="divide" class="button">/</button></li>
+					</ul>
+					<button type="submit" name="submit" value="total" class="button blue calculate">Calculate</button>
+				</form>
+			</div>
+		</section>
+
+		<hr class="article-separator">
+	</body>
+</html>
