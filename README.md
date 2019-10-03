@@ -17,5 +17,9 @@ The game is somewhat optimised for use on mobile devices.
 This is a command line only tool that displays randomly generated supervillain and superhero names. It shows how to implement Node Package Manager along with the nodes into your project.
 Not applicable to mobile devices.
 
-## Server
+## Express Server Functions
+### Server
 A simple Express server displaying html pages.
+
+### Calculator and BMI Calculator
+Setup a server and listen to specific ports to respond to different requests.
