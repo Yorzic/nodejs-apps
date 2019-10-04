@@ -18,6 +18,11 @@ This is a command line only tool that displays randomly generated supervillain a
 Not applicable to mobile devices.
 
 ## Express Server Functions
+Launch a server: 
+1. Cd to your project's directory
+2. nodemon server.js
+3. localhost:3000/
+
 ### Server
 A simple Express server displaying html pages.
 

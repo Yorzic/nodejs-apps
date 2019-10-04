@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bitcoin Ticker</title>
+		<style media="screen">
+			body {
+				text-align: center;
+				background-color: #283149;
+				font-family: 'Montserrat', sans-serif;
+			}
+
+			h1 {
+				font-size: 3rem;
+				color: #DBEDF3;
+				text-shadow: 3px 0 #DA0463;
+			}
+
+			p, li, a {
+				font-size: 1rem;
+				color: #DBEDF3;
+			}
+
+			li, a {
+				text-decoration: none;
+			}
+
+			li:hover, a:hover, {
+				color: rgb(102, 187, 255);
+			}
+
+			ul {
+				list-style: none;
+				padding-inline-start: 0px;
+			}
+
+			ul li {
+				display: inline-block;
+			}
+
+			.container form {
+				margin-bottom: 50px;
+			}
+
+			form input {
+				width: 5rem;
+				height: 2.6rem;
+				font-size: 1.5rem;
+				margin: auto 0.5rem;
+				text-align: center;
+				border-radius: 0.5rem;
+			}
+
+			form p {
+				display: inline-block;
+				font-size: 1.5rem;
+			}
+
+			form .newSection {
+				margin: 3em auto;
+			}
+
+			.container select {
+				height: 3rem;
+				font-size: 1.5rem;
+				margin: auto 0.5rem;
+			}
+
+			.button, button {
+				margin: 0.5em;
+				padding: 1rem 2rem;
+				border-radius: 0.5em;
+				font-size: 1.5rem;
+				color: white;
+				background-color: green;
+			}
+
+			.button:hover, button:hover {
+				background-color: rgba(0,128,0,0.5);
+				color: #DBEDF3;
+			}
+
+			.article-separator {
+				border: none;
+				border-top: dotted 10px;
+				border-color: #DBEDF3;
+				width: 20%;
+				margin: auto;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Calculator Section -->
+		<section id="calculator">
+			<div class="container">
+				<h1>Bitcoin Ticker</h1>
+				<form action="/" method="post">
+					<input type="text" name="amount" placeholder="1">
+					<select name="crypto">
+						<option value="BTC">Bitcoin</option>
+						<option value="ETH">Ethereum</option>
+						<option value="LTC">Litecoins</option>
+					</select>
+					<select name="fiat">
+						<option value="USD">U.S. Dollar</option>
+						<option value="EUR">Euro</option>
+						<option value="GBP">British Pound</option>
+					</select>
+					<div class="newSection">
+
+						<button type="submit" name="submit">Check</button>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<hr class="article-separator">
+	</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #DBEDF3;
+  text-shadow: 3px 0 #DA0463;
+}
+
+#console,
+#result {
+	color: #283149 !important;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.handwriting { 
+	font-family: 'Mansalva', cursive; 
+}
+
+.gaming { 
+	font-family: 'Press Start 2P', cursive; 
+}
+
+.teaser { 
+	margin: 1em auto; 
+}
+
+.wrapper { 
+	width: 24em; margin: auto; 
+}
+
+.dice-table { 
+	float: left; height: 10em; width: 10em; margin: 1em; display: table; background-color: crimson; border-radius: 1.5em; border: 0.5em solid #000000; 
+}
+
+.dice-cell { 
+	display: table-cell; vertical-align: middle; 
+}
+
+#green {
+	background-color: chartreuse;
+}
+
+#red {
+	background-color: red;
+}
+
+#yellow {
+	background-color: yellow;
+}
+
+#blue {
+	background-color: blue;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+#footer {
+	margin-top: 3em;
+}
+
+#footer p {
+	color: #DBEDF3;
+}
+			
+@media (max-width: 1024px) {
+	.teaser { font-size: 1.5rem; margin: 1em 1em; }
+	.wrapper { width: 16em; }
+	.dice-table { height: 7em; width: 7em; margin: 0.5em; }
+}
